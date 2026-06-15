@@ -1,0 +1,126 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", "Arial", sans-serif;
+  background-color: #f7fafc;
+  color: #2d3748;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+}
+.header .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3748;
+  cursor: pointer;
+}
+.header .navenu {
+  display: flex;
+  gap: 30px;
+}
+.header .navenu a {
+  text-decoration: none;
+  color: #718096;
+  font-size: 15px;
+}
+.header .autbock {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .autbock .btgister {
+  text-decoration: none;
+  color: #718096;
+  font-size: 15px;
+}
+.header .autbock .btogin {
+  background-color: #3182ce;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.herction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  flex-grow: 1;
+}
+.herction .herinfo {
+  max-width: 55%;
+}
+.herction .hertle {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.herction .hertle .brackets {
+  color: #e53e3e;
+  font-weight: 400;
+}
+.herction .hubtitle {
+  font-size: 16px;
+  color: #718096;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+.herction .btnart {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #e53e3e;
+  color: white;
+  padding: 16px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 14px rgba(229, 62, 62, 0.3);
+}
+.herction .btnart::after {
+  content: "↗";
+  font-size: 18px;
+}
+.herction .herisual {
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.herction .herisual img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 510px) {
+  .herction {
+    flex-direction: column;
+    gap: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #718096;
+    font-size: 15px;
+    display: none;
+  }
+  .autbock {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
